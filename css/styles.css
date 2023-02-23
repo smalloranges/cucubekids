@@ -238,25 +238,48 @@ CSS Queries
 ========================================================================== */
 
 
-@media screen and (max-width:992px) {
-    p{font-size: 1em; }
-    .thin-sep { display: none; }
-    .arrow { display: none; }
-    nav { height: auto; width: 100%; background: none; }
-    .nav-wrapper { background-color: #fff; }
-    nav ul { width: 100%; display: block; height: auto; padding: 0; }
-    nav li { width: 100%; float: left; position: relative; text-align: center; }
-    nav ul li a { width: 100%; float: left; position: relative; padding: 25px 0; text-align: center; border-top: 1px solid #eec94a; margin: 0px; }
-    nav ul li:last-child a { border-bottom: 1px solid #eec94a; }
-    nav ul li.dot { display: none; }
-    .responsive-logo { background: #eec94a; width: 2em; height: 2em; position: absolute; top: 2em; left: 2em; }
-    .logo-holder { display: none; }
-
-    .hero {height: 300px;}
-    h1.slogan {position:static; font-size: 4em;padding-left: 15px;}
-    .brands .col-md-2 {width: 48%; float: left;}
+@media screen and (max-width: 992px) {
+  .col-md-offset-7, .col-md-offset-2, .col-md-5, .col-md-4, .col-md-2 {float: left; }
+  .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-2 {
+    width: 16.66666667%;
+  }
 }
-@media only screen and (max-width:992px) {
+
+
+@media screen and (max-width: 768px) {
+  .col-md-offset-7, .col-md-offset-2, .col-md-5, .col-md-4, .col-md-2 {position: relative; padding-left: 15px; padding-right: 15px; min-height:1px; float: none;}
+  .col-md-offset-7, .col-md-offset-2 {margin-left: 0;}
+  .col-md-5, .col-md-4, .col-md-2 {width: 100%;}
+  p{font-size: 1em; }
+  .thin-sep { display: none; }
+  .arrow { display: none; }
+  nav { height: auto; width: 100%; background: none; }
+  .nav-wrapper { background-color: #fff; }
+  nav ul { width: 100%; display: block; height: auto; padding: 0; }
+  nav li { width: 100%; float: left; position: relative; text-align: center; }
+  nav ul li a { width: 100%; float: left; position: relative; padding: 25px 0; text-align: center; border-top: 1px solid #eec94a; margin: 0px; }
+  nav ul li:last-child a { border-bottom: 1px solid #eec94a; }
+  nav ul li.dot { display: none; }
+  .responsive-logo { background: #eec94a; width: 2em; height: 2em; position: absolute; top: 2em; left: 2em; }
+  .logo-holder { display: none; }
+
+  .hero {height: 300px;}
+  h1.slogan {position:static; font-size: 4em;padding-left: 15px;}
+  .brands .col-md-2 {width: 48%; float: left;}
+}
+@media only screen and (max-width:768px) {
     nav { border-bottom: 0; }
     nav ul { display: none; height: auto; }
     .pullcontainer { width: 100%; text-align: right; padding: 4em 2em 0 0; }
@@ -267,3 +290,5 @@ CSS Queries
     .pullcontainer a#pull.change i:first-child  {transform: translate(0, 11px) rotate(-45deg); opacity: 1;}
     .pullcontainer a#pull.change i:last-child {transform: translate(0, -11px) rotate(45deg); opacity: 1;}
 }
+
+
