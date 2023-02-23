@@ -1,9 +1,5 @@
 /* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
  
-/* ==========================================================================
-HTML5 display definitions
-========================================================================== */
- 
 /* * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3. */ 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
 /* * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3. */
@@ -11,16 +7,10 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 /* * Prevents modern browsers from displaying `audio` without controls.
 * Remove excess height in iOS 5 devices. */
 audio:not([controls]) { display: none; height: 0; }
-/* * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3, * and Safari 4.
-* Known issue:no IE 6 support. */
 [hidden] { display: none; }
 /* ==========================================================================
 Base
 ========================================================================== */
-/* * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
-*    `em` units.
-* 2. Prevents iOS text size adjust after orientation change, without disabling
-*    user zoom. */
  
 html { background: #89C1C5; font-size: 100%; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
@@ -167,9 +157,6 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 * 2. Improves readability and alignment in all browsers. */
 textarea { overflow: auto; /* 1 */
 vertical-align: top; /* 2 */ }
-/* ==========================================================================
-Tables
-========================================================================== */
 /* * Remove most spacing between table cells. */
  
 table { border-collapse: collapse; border-spacing: 0; }
@@ -187,10 +174,6 @@ h1.slogan { text-align: left; text-transform: uppercase;  letter-spacing: 2px; f
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
-h2.frame { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 1.2em; font-weight: 600; margin-top: 70px; }
-h2.twitter-post-username { color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; margin-top: 30px; }
-h2.twitter-post-username span { color: #848789; font-weight: 300; }
-h2.logo-header { text-align: center; color: #848789; letter-spacing: 1px; font-size: 24px; font-weight: 300; background: url(../img/main-logo.png) no-repeat top center; padding-top: 120px; margin: 70px 0 40px 0; font-style: italic; }
 /* ==========================================================================
 User Styles
 ========================================================================== */
@@ -207,9 +190,8 @@ a:hover { color: #64c29e; text-decoration: none; }
 p { font-size: 1rem; color: #848789; font-weight: 300; word-spacing: 2px; line-height: 1.8em; }
 .hero { background: url(../img/logo-cucube.png) no-repeat center center; background-size:15%; height: 600px; }
 nav { margin-top: 30px; position: relative; }
-.logo-holder { background: url(../img/cucube-ico.png) no-repeat center center; width: 40px; height: 40px; float:left;}
+.logo-holder { width:2em; height: 2em; background: #eec94a; float:left;}
 .responsive-logo { display: hidden; }
-/*header { background-color: #f4f5fc; }*/
 header ul { margin: 0 auto; width: 50%; text-align: center;}
 header ul li { list-style: none; text-transform: uppercase; letter-spacing: 2px; display: inline; line-height: 40px; }
 header ul li.dot {padding: 0 2rem;}
@@ -244,71 +226,44 @@ h2.title {font-size: 4em; text-transform: uppercase; margin: 2em 0 1.4em 0; font
 .text-contact p a:hover {color: #000; background: #eec94a;}
 
 
-.section-1 { background: url(../img/left-box-1.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
-.section-2 { background: url(../img/left-box-2.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
-.section-3 { background: url(../img/red-frame.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
-.section-4 { background: url(../img/red-bike.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; }
-.section-text { position: relative; }
-.nopadding { padding: 0 !important; margin: 0 !important; }
-.thin-sep { height: 1px; background-color: #d7d7d7; width: 50px; margin: 8% auto 0 auto; }
-.small-featured-img { height: 200px; width: 100%; position: absolute; bottom: 0; }
-.seat-red { background: url(../img/seat-red.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-.seat-black { background: url(../img/seat-black.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-.frame-red { background: url(../img/chrome-wheels.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-.section-text p { padding: 0 60px; text-align: justify; }
-.arrow { background: url(../img/arrow.png) no-repeat center center; width: 21px; height: 10px; margin: -1px auto 0 auto; }
-.logo-1 { width: 113px; height: 118px; background: url(../img/bicycle-logo.png); position: absolute; left: 50%; top: 50%; margin-left: -56px; margin-top: -59px; }
-.logo-2 { width: 177px; height: 152px; background: url(../img/vintage-logo.png); position: absolute; left: 50%; top: 50%; margin-top: -70px; margin-left: -90px; }
-.logo-3 { width: 208px; height: 67px; background: url(../img/bicycles-sml-logo.png); position: absolute; left: 50%; top: 50%; margin-left: -110px; margin-top: -10px; }
-.flex-container { background-color: #f7f7f7; padding: 125px 0 35px; text-align: center; }
-.flex-twitter-icon { width: 32px; height: 27px; background: url(../img/twitter-bird.png) no-repeat center center; margin: 0 auto; }
-p.twitter-post { color: #848789; font-size: 24px; font-style: italic; font-weight: 300; margin-bottom: 100px; }
-.left-box-1 { width: 20%; float: left; }
-.left-box-2 { width: 50%; float: right; }
-.left-box-btm { width: 100%; }
-.left-box-1 .img {padding-left: 10%;}
-.left-box-1 img, .left-box-2 img, .left-box-btm img { width: 80%; }
-.mid-box-1 { width: 50%; float: left; }
-.mid-box-2 { width: 50%; float: right; }
-.mid-box-1 img { width: 100%; height: 100%; }
-.mid-box-2 img { width: 100%; height: 100%; }
-.right-box-1 { width: 100%; }
-.right-box-2 { width: 50%; float: left; }
-.right-box-3 { width: 50%; float: right; }
-.right-box-3 img, .right-box-2 img, .right-box-1 img { width: 100%; }
-.effects { }
-.effects .img { position: relative; }
-.effects .img img { display: block; margin: 0; padding: 0; max-width: 100%; height: auto; }
-.overlay { z-index: 10 }
-a.close-overlay { display: block; position: absolute; top: 0; right: 0; z-index: 20; width: 45px; height: 45px; font-size: 20px; font-weight: 700; color: #fff; line-height: 45px; text-align: center; background-color: #000; cursor: pointer; }
-a.close-overlay.hidden { display: none }
-#effect .overlay { position: absolute; display: block; top: 0; bottom: 0; left: 0; right: 0; background: rgba(100, 194, 158, 0.8); opacity: 0; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
-#effect .overlay a.expand { position: absolute; left: 0; right: 0; top: 0; content: ""; margin: 0 auto; border-radius: 30px; text-align: center; color: #fff; line-height: 50px; font-weight: 600; font-size: 14px; opacity: 0; text-transform: uppercase; letter-spacing: 3px; background: url(../img/open.png) no-repeat top center; padding-top: 25px; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; display: block; }
-#effect .img { overflow: hidden }
-#effect .img.hover .overlay { opacity: 1 }
-#effect .img.hover .overlay a.expand { top: 50%; margin-top: -30px; opacity: 1; }
-.discover { background-color: #282f35; padding: 70px 0; text-align: center; }
-.shop-btn { border: solid 1px #bbb; padding: 15px 50px; color: #fff; text-transform: uppercase; letter-spacing: 3px; font-weight: 400; }
-.shop-btn:hover, .shop-btn:focus { border: solid 1px #64c29e; }
-.sign-up { text-align: center; }
-.signup-input { border: solid 1px #d3d7d9; padding: 25px; width: 65%; color: #929292; font-style: italic; letter-spacing: 1px; }
-.submit-btn { background-color: #64c29e; color: #fff; border: solid 1px #64c29e; font-weight: 300; padding: 25px 50px; }
-section.sign_up { padding: 40px 0 110px 0; }
+
 footer {  padding: 2em 0; }
 footer p { font-size: 1em; margin: 0; color: #fff;}
 footer p a {color: #fff;}
 footer p a:hover {color:#fff; border-bottom: 1px solid #fff;}
 
-.footer-leftcol p { text-align: left; }
-.footer-rightcol p { text-align: right; font-style: italic; margin-top: 20px; }
-.bold-16p { font-size: 15px; font-weight: 600; }
-.footer-midcol { margin-left: auto; margin-right: auto; }
-.footer-midcol ul { text-align: center; padding: 0; }
-.footer-midcol li { list-style: none; display: inline-block; margin-right: 15px; }
-.footer-midcol li a { opacity: 1; }
-.footer-midcol li a:hover { opacity: 0.5; }
-.twitter-icon { background: url(../img/twitter-icon.png); height: 34px; width: 35px; display: block; text-indent: -9999px; }
-.facebook-icon { background: url(../img/facebook-icon.png); height: 34px; width: 35px; display: block; text-indent: -9999px; }
-.pintrest-icon { background: url(../img/pintrest-icon.png); height: 34px; width: 35px; display: block; text-indent: -9999px; }
-.wp1, .wp2, .wp3, .wp4, .wp5, .wp6 { visibility: hidden; }
-.bounceInLeft, .bounceInRight, .fadeInUp { visibility: visible; }
+
+/* ==========================================================================
+CSS Queries
+========================================================================== */
+
+
+@media screen and (max-width:992px) {
+    p{font-size: 1em; }
+    .thin-sep { display: none; }
+    .arrow { display: none; }
+    nav { height: auto; width: 100%; background: none; }
+    .nav-wrapper { background-color: #fff; }
+    nav ul { width: 100%; display: block; height: auto; padding: 0; }
+    nav li { width: 100%; float: left; position: relative; text-align: center; }
+    nav ul li a { width: 100%; float: left; position: relative; padding: 25px 0; text-align: center; border-top: 1px solid #eec94a; margin: 0px; }
+    nav ul li:last-child a { border-bottom: 1px solid #eec94a; }
+    nav ul li.dot { display: none; }
+    .responsive-logo { background: #eec94a; width: 2em; height: 2em; position: absolute; top: 2em; left: 2em; }
+    .logo-holder { display: none; }
+
+    .hero {height: 300px;}
+    h1.slogan {position:static; font-size: 4em;padding-left: 15px;}
+    .brands .col-md-2 {width: 48%; float: left;}
+}
+@media only screen and (max-width:992px) {
+    nav { border-bottom: 0; }
+    nav ul { display: none; height: auto; }
+    .pullcontainer { width: 100%; text-align: right; padding: 4em 2em 0 0; }
+    .pullcontainer a#pull { display: block; width: 2em; color: #242a2c; position: absolute; top: 2em; right: 2em;}
+    .pullcontainer a#pull i {width: 2em; height: 5px; margin: 6px 0; transition: 0.4s; display: block; background: #333;}
+    .pullcontainer a#pull i:first-child {margin-top: 0;}
+    .pullcontainer a#pull.change i {opacity: 0; }
+    .pullcontainer a#pull.change i:first-child  {transform: translate(0, 11px) rotate(-45deg); opacity: 1;}
+    .pullcontainer a#pull.change i:last-child {transform: translate(0, -11px) rotate(45deg); opacity: 1;}
+}

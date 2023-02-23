@@ -14,6 +14,7 @@ $(window).load(function() {
     $(pull).on('click', function(e) {
       e.preventDefault();
       menu.slideToggle();
+      pull.toggleClass("change");
     });
   });
   $(window).resize(function() {
@@ -23,40 +24,6 @@ $(window).load(function() {
       menu.removeAttr('style');
     }
   });
-});
-
-
-//OVERLAYS
-$(document).ready(function() {
-  if (Modernizr.touch) {
-    // show the close overlay button
-    $(".close-overlay").removeClass("hidden");
-    // handle the adding of hover class when clicked
-    $(".effects .img").click(function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      if (!$(this).hasClass("hover")) {
-        $(this).addClass("hover");
-      }
-    });
-    // handle the closing of the overlay
-    $(".close-overlay").click(function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      if ($(this).closest(".img").hasClass("hover")) {
-        $(this).closest(".img").removeClass("hover");
-      }
-    });
-  } else {
-    // handle the mouseenter functionality
-    $(".effects .img").mouseenter(function() {
-      $(this).addClass("hover");
-    })
-    // handle the mouseleave functionality
-    .mouseleave(function() {
-      $(this).removeClass("hover");
-    });
-  }
 });
 
 
@@ -75,46 +42,4 @@ $(function() {
       }
     }
   });
-});
-
-
-// WAYPOINTS
-$(function() {
-
-  $('.wp1').waypoint(function() {
-    $('.wp1').addClass('animated bounceInLeft');
-  }, {
-    offset: '85%'
-  });
-
-  $('.wp2').waypoint(function() {
-    $('.wp2').addClass('animated bounceInRight');
-  }, {
-    offset: '85%'
-  });
-
-  $('.wp3').waypoint(function() {
-    $('.wp3').addClass('animated bounceInLeft');
-  }, {
-    offset: '85%'
-  });
-
-  $('.wp4').waypoint(function() {
-    $('.wp4').addClass('animated fadeInUp');
-  }, {
-    offset: '85%'
-  });
-
-  $('.wp5').waypoint(function() {
-    $('.wp5').addClass('animated fadeInUp');
-  }, {
-    offset: '85%'
-  });
-
-  $('.wp6').waypoint(function() {
-    $('.wp6').addClass('animated fadeInUp');
-  }, {
-    offset: '85%'
-  });
-
 });
