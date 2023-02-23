@@ -29,7 +29,7 @@ html { background: #89C1C5; font-size: 100%; /* 1 */
 * elements. */
 html, button, input, select, textarea { font-family: sans-serif; }
 /* * Addresses margins handled incorrectly in IE 6/7. */
-body { margin: 0; font-family: 'Lato', sans-serif; overflow-x: hidden; background: linear-gradient(135deg, #FAEADC, #F6F6C9 30% , #89C1C5 60%);animation: gradient 10s ease infinite; background-size: 100% 200%;}
+body { margin: 0; font-family: 'apercu', sans-serif; overflow-x: hidden; background: linear-gradient(135deg, #FAEADC, #F6F6C9 30% , #89C1C5 60%);animation: gradient 10s ease infinite; background-size: 100% 200%;}
 @keyframes gradient {
   0% {background-position: 0% 0%;}
   50% {background-position: 0% 100%;}
@@ -177,20 +177,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* ==========================================================================
 Headings
 ========================================================================== */
-h1.chain { text-align: center; text-transform: uppercase;  letter-spacing: 2px; font-size: 2.6em; font-weight: 600; 
-
-  /* Fallback: Set a background color. */
+h1.slogan { text-align: left; text-transform: uppercase;  letter-spacing: 2px; font-size: 10em; font-weight: 800; position: absolute; top: 300px; left: 2rem; 
   background-color: #89C1C5;
-  
-  /* Create the gradient. */
   background-image: linear-gradient(135deg, #FAEADC, #F6F6C9 30% , #89C1C5 60%);
-  
-  /* Set the background size and repeat properties. */
   background-size: 100%;
   background-repeat: repeat;
-
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
@@ -213,20 +204,46 @@ User Styles
 .pullcontainer a#pull { display: none; }
 a { color: #282f35; -webkit-transition: all .25s ease; -moz-transition: all .25s ease; -ms-transition: all .25s ease; -o-transition: all .25s ease; transition: all .25s ease; }
 a:hover { color: #64c29e; text-decoration: none; }
-p { text-align: center; font-size: 14px; color: #848789; font-weight: 300; word-spacing: 2px; line-height: 1.8em; margin-top: 25px; }
-p.text-intro { font-size: 1.4em; padding: 0 2em; }
+p { font-size: 1rem; color: #848789; font-weight: 300; word-spacing: 2px; line-height: 1.8em; }
 .hero { background: url(../img/logo-cucube.png) no-repeat center center; background-size:15%; height: 600px; }
-nav { height: 85px; margin-top: 30px; position: relative; }
-.logo-holder { background: url(../img/main-logo.png) no-repeat center center; width: 94px; height: 85px; position: absolute; top: 0; left: 327px; }
+nav { margin-top: 30px; position: relative; }
+.logo-holder { background: url(../img/cucube-ico.png) no-repeat center center; width: 40px; height: 40px; float:left;}
 .responsive-logo { display: hidden; }
 /*header { background-color: #f4f5fc; }*/
-header ul { padding-top: 35px; }
-header ul li { list-style: none; float: left; text-transform: uppercase; letter-spacing: 2px; width: 25%;}
-header ul li a { display: block; margin: 0 30px; color: #4d4959; text-align: center;}
+header ul { margin: 0 auto; width: 50%; text-align: center;}
+header ul li { list-style: none; text-transform: uppercase; letter-spacing: 2px; display: inline; line-height: 40px; }
+header ul li.dot {padding: 0 2rem;}
+header ul li a { font-weight: 400; }
 .r_spacer { margin-right: 180px;  }
 .intro {  }
-.intro .col-md-8 { background-color: #fbfbfb; padding-top: 4em; padding-bottom: 4em;}
+.text-info {padding: 4rem 4rem 2rem 2rem; background-color: #fbfbfb; }
+.text-info p {text-align: left; font-size: 1rem;}
+.text-info p.text-intro { font-size: 1.4em; }
 .intro-part-2 {padding: 0 0 4em 0; margin-top: 4em; background: #fbfbfb; }
+h2.title {font-size: 4em; text-transform: uppercase; margin: 2em 0 1.4em 0; font-weight: 800;}
+.brands h3 {font-size: 1.4em; margin: 0 0 1.4em 0; }
+.brands ul {padding: 0;}
+.brands ul li {list-style:none; padding-bottom:3em; position: relative; }
+.brands ul li a {display: block;}
+.brands ul img {width: 80%;}
+.brands ul.specials-brands li {padding-bottom: 2em;}
+.brands ul.specials-brands img.logo{ position: absolute; top: 0; left: 0; z-index: 2000; background: #eec94a; width: 30%; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; display: block;}
+.brands ul.specials-brands img.logo-hover {z-index: 1000; }
+.brands ul.specials-brands li:last-child img.logo {position: static;}
+.brands ul.specials-brands a:hover img.logo {background: #fff;}
+.brands ul.specials-brands a:hover img.logo-hover {background: #fff;  z-index: 3000;}
+.brands ul.specials-brands a:hover img.model {  }
+.brands ul.common-brands img {border: 2px solid #64c29e;}
+.brands ul.common-brands img.model { border-width: 0 2px 2px 2px;}
+.brands ul.common-brands img.logo {-webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s;}
+.brands ul.common-brands a:hover img.logo {background: #64c29e;}
+
+.text-contact {padding: 0 0 4em 0;}
+.text-contact p {font-size: 1.4em; color: #000; line-height: 2.4em; font-weight: 400; margin: 0;}
+.text-contact p a {border-bottom: 1px solid #000;}
+.text-contact p a:hover {color: #000; background: #eec94a;}
+
+
 .section-1 { background: url(../img/left-box-1.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
 .section-2 { background: url(../img/left-box-2.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
 .section-3 { background: url(../img/red-frame.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
@@ -277,8 +294,11 @@ a.close-overlay.hidden { display: none }
 .signup-input { border: solid 1px #d3d7d9; padding: 25px; width: 65%; color: #929292; font-style: italic; letter-spacing: 1px; }
 .submit-btn { background-color: #64c29e; color: #fff; border: solid 1px #64c29e; font-weight: 300; padding: 25px 50px; }
 section.sign_up { padding: 40px 0 110px 0; }
-footer { background:#fff;  padding: 2em 0; }
-footer p { font-size: 13px; margin: 0; }
+footer {  padding: 2em 0; }
+footer p { font-size: 1em; margin: 0; color: #fff;}
+footer p a {color: #fff;}
+footer p a:hover {color:#fff; border-bottom: 1px solid #fff;}
+
 .footer-leftcol p { text-align: left; }
 .footer-rightcol p { text-align: right; font-style: italic; margin-top: 20px; }
 .bold-16p { font-size: 15px; font-weight: 600; }
