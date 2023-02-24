@@ -223,6 +223,7 @@ h2.title {font-size: 4em; text-transform: uppercase; margin: 2em 0 1.4em 0; font
 .text-contact p {font-size: 1.4em; color: #000; line-height: 2.4em; font-weight: 400; margin: 0;}
 .text-contact p a {border-bottom: 1px solid #000;}
 .text-contact p a:hover {color: #000; background: #eec94a;}
+img.address {width: 100%;}
 
 
 
