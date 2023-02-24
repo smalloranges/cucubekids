@@ -212,13 +212,13 @@ h2.title {font-size: 4em; text-transform: uppercase; margin: 2em 0 1.4em 0; font
 .brands ul.specials-brands img.logo{ position: absolute; top: 0; left: 0; z-index: 2000; background: #eec94a; width: 30%; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; display: block;}
 .brands ul.specials-brands img.logo-hover {z-index: 1000; }
 .brands ul.specials-brands li:last-child img.logo {position: static;}
-.brands ul.specials-brands a:hover img.logo {background: #fff;}
-.brands ul.specials-brands a:hover img.logo-hover {background: #fff;  z-index: 3000;}
-.brands ul.specials-brands a:hover img.model {  }
+.brands ul.specials-brands li:hover img.logo {background: #fff;}
+.brands ul.specials-brands li:hover img.logo-hover {background: #fff;  z-index: 3000;}
+.brands ul.specials-brands li:hover img.model {  }
 .brands ul.common-brands img {border: 2px solid #64c29e;}
 .brands ul.common-brands img.model { border-width: 0 2px 2px 2px;}
 .brands ul.common-brands img.logo {-webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s;}
-.brands ul.common-brands a:hover img.logo {background: #64c29e;}
+.brands ul.common-brands li:hover img.logo {background: #64c29e;}
 
 .text-contact {padding: 0 0 4em 0;}
 .text-contact p {font-size: 1.4em; color: #000; line-height: 2.4em; font-weight: 400; margin: 0;}
