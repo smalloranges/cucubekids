@@ -188,7 +188,7 @@ User Styles
 a { color: #282f35; -webkit-transition: all .25s ease; -moz-transition: all .25s ease; -ms-transition: all .25s ease; -o-transition: all .25s ease; transition: all .25s ease; }
 a:hover { color: #64c29e; text-decoration: none; }
 p { font-size: 1rem; color: #848789; font-weight: 300; word-spacing: 2px; line-height: 1.8em; }
-.hero { background: url(../img/logo-cucube.png) no-repeat center center; background-size:15%; height: 600px; }
+.hero { background: url(../img/logo-cucube.png) no-repeat center center; background-size:30%; height: 600px; }
 nav { margin-top: 30px; position: relative; }
 .logo-holder { width:2em; height: 2em; background: #eec94a; float:left;}
 .responsive-logo { display: hidden; }
@@ -275,8 +275,8 @@ CSS Queries
   .responsive-logo { background: #eec94a; width: 2em; height: 2em; position: absolute; top: 2em; left: 2em; }
   .logo-holder { display: none; }
 
-  .hero {height: 300px;}
-  h1.slogan {position:static; font-size: 4em;padding-left: 15px;}
+  .hero {height: 300px; background-size: 50%;}
+  h1.slogan {position:static; font-size: 4em;padding-left: 1rem;}
   .brands .col-md-2 {width: 48%; float: left;}
 }
 @media only screen and (max-width:768px) {
