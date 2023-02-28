@@ -187,6 +187,7 @@ User Styles
 .pullcontainer a#pull { display: none; }
 a { color: #282f35; -webkit-transition: all .25s ease; -moz-transition: all .25s ease; -ms-transition: all .25s ease; -o-transition: all .25s ease; transition: all .25s ease; }
 a:hover { color: #64c29e; text-decoration: none; }
+a:visited,a:focus {outline: none;color:#333; text-decoration: none;}
 p { font-size: 1rem; color: #848789; font-weight: 300; word-spacing: 2px; line-height: 1.8em; }
 .hero { background: url(../img/logo-cucube.png) no-repeat center center; background-size:30%; height: 600px; }
 nav { margin-top: 30px; position: relative; }
