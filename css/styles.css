@@ -19,7 +19,7 @@ html { background: #89C1C5; font-size: 100%; /* 1 */
 * elements. */
 html, button, input, select, textarea { font-family: sans-serif; }
 /* * Addresses margins handled incorrectly in IE 6/7. */
-body { margin: 0; font-family: 'apercu', sans-serif; overflow-x: hidden; background: linear-gradient(135deg, #FAEADC, #F6F6C9 30% , #89C1C5 60%);animation: gradient 10s ease infinite; background-size: 100% 200%;}
+body { margin: 0; font-family: sans-serif; overflow-x: hidden; background: linear-gradient(135deg, #FAEADC, #F6F6C9 30% , #89C1C5 60%);animation: gradient 10s ease infinite; background-size: 100% 200%;}
 @keyframes gradient {
   0% {background-position: 0% 0%;}
   50% {background-position: 0% 100%;}
