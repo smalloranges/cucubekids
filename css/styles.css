@@ -208,7 +208,7 @@ h2.title {font-size: 4em; text-transform: uppercase; margin: 2em 0 1.4em 0; font
 .brands ul {padding: 0;}
 .brands ul li {list-style:none; padding-bottom:3em; position: relative; }
 .brands ul img {width: 80%;}
-.brands ul.specials-brands li {padding-bottom: 2em;}
+.brands ul.specials-brands li {padding-bottom: 2em; float:left; width: 50%;}
 .brands ul.specials-brands img.logo{ position: absolute; top: 0; left: 0; z-index: 2000; background: #eec94a; width: 30%; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; display: block;}
 .brands ul.specials-brands img.logo-hover {z-index: 1000; }
 .brands ul.specials-brands li:hover img.logo {background: #fff;}
@@ -279,6 +279,7 @@ CSS Queries
   .hero {height: 300px; background-size: 50%;}
   h1.slogan {position:static; font-size: 4em;padding-left: 1rem;}
   .brands .col-md-2 {width: 48%; float: left;}
+  .brands ul.specials-brands li {float:none; width: 100%;}
 }
 @media only screen and (max-width:768px) {
     nav { border-bottom: 0; }
